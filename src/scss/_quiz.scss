@@ -7,6 +7,12 @@ body {
   background-color: white;
 }
 
+.quiz-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50vh;
+}
 #quiz-content {
   font-size: 4vh;
 }
