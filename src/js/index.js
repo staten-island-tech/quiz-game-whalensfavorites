@@ -10,10 +10,10 @@ const choiceC = document.getElementById("C");
 const scoreDiv = document.getElementById("scoreContainer");
 
 // make an array of questions with objects
-let questions = [
+const questions = [
   {
     question: "What does he own most of?",
-    choiceA: "Plaids",
+    choiceA: "Plaid flannels",
     choiceB: "Sport Jerseys",
     choiceC: "Crop tops",
     correct: "A",
@@ -25,6 +25,30 @@ let questions = [
     choiceB: "Monkey",
     choiceC: "Lion",
     correct: "B",
+  },
+
+  {
+    question: "What shoes does he always wear?",
+    choiceA: "sketchers",
+    choiceB: "nike",
+    choiceC: "adidas",
+    correct: "C",
+  },
+
+  {
+    question: "What class is his least favorite to teach?",
+    choiceA: "CAD",
+    choiceB: "Comp sci",
+    choiceC: "AP World",
+    correct: "A",
+  },
+
+  {
+    question: "What college did he go to?",
+    choiceA: "Harvard",
+    choiceB: "CSI",
+    choiceC: "St. Johns",
+    correct: "C",
   },
 ];
 
