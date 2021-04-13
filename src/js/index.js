@@ -1,5 +1,4 @@
 // define your variables
-
 correct = 0;
 const start = document.getElementById("start");
 const quiz = document.getElementById("quiz");
@@ -7,8 +6,10 @@ const question = document.getElementById("question");
 const choiceA = document.getElementById("A");
 const choiceB = document.getElementById("B");
 const choiceC = document.getElementById("C");
-const scoreDiv = document.getElementById("scoreContainer");
+const scoreDiv = document.getElementById("score");
+const pick = document.querySelectorAll("choices");
 
+console.log(pick);
 // make an array of questions with objects
 const questions = [
   {
@@ -82,8 +83,9 @@ function startQuiz() {
 }
 // check to see if the answer user selected is correct
 
-function checkAnswer(answer) {
-  if (answer == questions[runningQuestion].correct) {
+// thank you muhammad ^^;
+function checkAnswer(event) {
+  if (event.target.id == questions[runningQuestion].correct) {
     // if selected the correct answer, add one
     score++;
   }
@@ -94,6 +96,53 @@ function checkAnswer(answer) {
     scoreRender();
   }
 }
+
+// select my buttons
+
+// on click event listener
+
+// triggers the checkAnswer function
+
+// SOLUTION 1: DIVIDER !!!! EXPERIMENT : ERROR - SCORE NO LONGER WORKS
+
+// const choiceA = document.getElementById("A");
+// const choiceB = document.getElementById("B");
+// const choiceC = document.getElementById("C");
+// let pick = [choiceA, choiceB, choiceC];
+
+// document.querySelectorAll(".choice").forEach((button) => {
+//   button.addEventListener("click", (event) => {
+//     checkAnswer();
+//   });
+// });
+
+// console.log(event);
+
+// SOLUTION 2: DIVIDER !!!!
+// choice.addEventListener("click", function () {
+//   checkAnswer();
+// });
+
+// for (var i = 0; i < choice; i++) {
+//   document
+//     .querySelectorAll(".choice")
+//     [i].addEventListener("click", function () {
+//       checkAnswer();
+//     });
+// }
+
+//SOLUTION 3: DIVIDER!!!!!
+
+// pick.forEach((button) => {
+//   button.addEventListener("click", (checkAnswer) => {
+//     checkAnswer();
+//   });
+// });
+
+// DIVIDER
+choiceA.addEventListener("click", checkAnswer);
+choiceB.addEventListener("click", checkAnswer);
+choiceC.addEventListener("click", checkAnswer);
 
 function scoreRender() {
   // display the block, HTML code is none
