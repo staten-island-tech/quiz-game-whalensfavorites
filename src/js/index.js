@@ -12,7 +12,7 @@ const scoreDiv = document.getElementById("scoreContainer");
 // make an array of questions with objects
 const questions = [
   {
-    question: "What does he own most of?",
+    question: "What does Mr Whalen own the most of?",
     choiceA: "Plaid flannels",
     choiceB: "Sport Jerseys",
     choiceC: "Crop tops",
@@ -29,16 +29,16 @@ const questions = [
 
   {
     question: "What shoes does he always wear?",
-    choiceA: "sketchers",
-    choiceB: "nike",
-    choiceC: "adidas",
+    choiceA: "Sketchers",
+    choiceB: "Nike",
+    choiceC: "Adidas",
     correct: "C",
   },
 
   {
-    question: "What class is his least favorite to teach?",
+    question: "What class is his least favorite class to teach?",
     choiceA: "CAD",
-    choiceB: "Comp sci",
+    choiceB: "Computer Science",
     choiceC: "AP World",
     correct: "A",
   },
