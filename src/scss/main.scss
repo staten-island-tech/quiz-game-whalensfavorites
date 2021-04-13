@@ -1,1 +1,53 @@
 @import "_quiz.scss";
+@import "_variables.scss";
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+@function font($font-name) {
+  @return map-get($fonts, $font-name);
+}
+
+header {
+  align-content: center;
+}
+
+body {
+    background-color: red
+}
+
+.header-text-box {
+  margin: 0rem;
+  align-content: center;
+  background-color: color(background);
+  padding: 10rem;
+  border-color: color(post-fill);
+  border-style: solid;
+  border-bottom-width: 8rem;
+  border-top-width: 0rem;
+  border-right-width: 0rem;
+  border-left-width: 0rem;
+  border-style: double;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+}
+.header-primary {
+  text-align: center;
+  font-weight: 800;
+  color: color();
+}
+.header-primary-main {
+  font-size: 11rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  text-shadow: color() 6px 6px;
+  display: block;
+}
+.header-primary-sub {
+  font-size: 4rem;
+  letter-spacing: 2rem;
+  color: color();
+  text-transform: uppercase;
+}
