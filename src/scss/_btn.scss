@@ -8,7 +8,22 @@
   @return map-get($fonts, $font-name);
 }
 
-.header-primary:hover {
-  color: color(post-border);
-  transition: all 0.5s;
+.header-primary-main:hover {
+  color: color(text);
+  text-shadow: color(background-color) 0px 0px;
+  transform: translateX(6px) translateY(6px);
+  transition: all 0.7s;
+}
+
+.choice:hover {
+  background-color: color(accent);
+  transition: all 0.4s;
+  transform: scale(1.07);
+  transform: translateY(0.7rem);
+}
+
+.start:hover {
+  color: color(post-fill);
+  transition: all 0.3s;
+  transform: scale(1.25);
 }

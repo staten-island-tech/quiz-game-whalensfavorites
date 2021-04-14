@@ -12,10 +12,12 @@
 
 header {
   align-content: center;
+  background-color: color(background-two);
 }
 
 body {
   align-content: center;
+  background-color: color(background-two);
 }
 
 .header-text-box {
@@ -47,25 +49,49 @@ body {
   display: block;
 }
 .header-primary-sub {
-  font-size: 4rem;
-  letter-spacing: 2rem;
+  font-size: 3rem;
+  letter-spacing: 0.75rem;
   color: color(post-border);
   text-transform: uppercase;
 }
 
 .start {
-  font-size: 6rem;
-  font-family: font(questions);
+  font-size: 8rem;
+  font-family: font(choice);
 }
 
 .container {
-  font-size: 6rem;
+  font-size: 7rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   font-family: font(questions);
   display: flex;
   justify-content: center;
+  background-color: color(background-two);
+  color: color(accent);
+  font-weight: 200;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  padding-left: 20rem;
+  padding-right: 20rem;
 }
 
 .choice {
-  padding: 4rem;
-  margin: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  margin: 2rem;
+  background-color: color(post-border);
+  color: color(choice);
+  border-radius: 3rem;
+  letter-spacing: 0.5rem;
+  font-size: 3rem;
+  border-width: 0.5rem;
+  border-color: color(post-fill);
+  font-family: font(choices);
+}
+
+.body {
+  background-color: color(background-two);
 }
