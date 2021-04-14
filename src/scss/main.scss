@@ -1,5 +1,6 @@
 @import "_quiz.scss";
 @import "_variables.scss";
+@import "_btn.scss";
 
 @function color($color-name) {
   @return map-get($colors, $color-name);
@@ -14,7 +15,7 @@ header {
 }
 
 body {
-    background-color: red
+  align-content: center;
 }
 
 .header-text-box {
@@ -36,18 +37,35 @@ body {
 .header-primary {
   text-align: center;
   font-weight: 800;
-  color: color();
+  color: color(accent);
 }
 .header-primary-main {
   font-size: 11rem;
   text-transform: uppercase;
   letter-spacing: 1rem;
-  text-shadow: color() 6px 6px;
+  text-shadow: color(text) 6px 6px;
   display: block;
 }
 .header-primary-sub {
   font-size: 4rem;
   letter-spacing: 2rem;
-  color: color();
+  color: color(post-border);
   text-transform: uppercase;
+}
+
+.start {
+  font-size: 6rem;
+  font-family: font(questions);
+}
+
+.container {
+  font-size: 6rem;
+  font-family: font(questions);
+  display: flex;
+  justify-content: center;
+}
+
+.choice {
+  padding: 4rem;
+  margin: 5rem;
 }

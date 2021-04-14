@@ -1,0 +1,14 @@
+@import "_variables.scss";
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+@function font($font-name) {
+  @return map-get($fonts, $font-name);
+}
+
+.header-primary:hover {
+  color: color(post-border);
+  transition: all 0.5s;
+}

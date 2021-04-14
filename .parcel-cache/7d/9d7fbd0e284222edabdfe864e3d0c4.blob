@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="a60f8e0cde6a6effe90044aab8273e00">
+    <link rel="stylesheet" href="aabf95bf9d3d335c3b7e67f57fad74e8">
+    <link href="91d4657726503ff57a73d7ff1ee3b40c" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>How Well Do You Know Mr.Whalen?</title>
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header-text-box">
+          <h2 class="header-primary">
+              <span class="header-primary-main">How Well Do You Know Mr.Whalen?</span>
+              <span class="header-primary-sub">Quiz by Julissa Liang and Harrison Steele</span>
+              </h2> 
+          </div>
+    </header>
+
+    <div id="container">
+      <div id="start">Start Quiz</div>
+      <div id="quiz" style="a4a6a0640fdfef668f126cd16f1fb34c">
+        <div id="question"></div>
+        <div id="choices">
+          <button class="choice" id="A"></button>
+          <button class="choice" id="B"></button>
+          <button class="choice" id="C"></button>
+        </div>
+      </div>
+      <div id="score" style="bb2b775119f0077bd908f8bb11ed5765"></div>
+    </div>
+    <script src="06dfe9f8db92a79f21cf80f953a0a070"></script>
+  </body>
+</html>
