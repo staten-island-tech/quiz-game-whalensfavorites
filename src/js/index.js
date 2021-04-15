@@ -154,14 +154,14 @@ function scoreRender() {
   // learned from the youtube video that ? and : are alternatives for if...else statements; typically used in ternary operators, or a shortcut for traditional statements!!! AWESOME!!!
   let img =
     scoreNumber >= 80
-      ? "img/monkey.png"
+      ? "https://3.files.edl.io/aeb1/20/12/02/154937-46cc468f-b7f4-4bb3-945e-3265bdb605d4.jpg"
       : scoreNumber >= 60
-      ? "img/monkey.png"
+      ? "https://cdn.iconscout.com/icon/free/png-256/slightly-smiling-face-1645183-1395513.png"
       : scoreNumber >= 40
-      ? "img/monkey.png"
+      ? "https://iconarchive.com/download/i43123/oxygen-icons.org/oxygen/Emotes-face-plain.ico"
       : scoreNumber >= 20
-      ? "img/monkey.png"
-      : "img/monkey.png";
+      ? "https://www.google.com/url?sa=i&url=https%3A%2F%2Femojipedia.org%2Fapple%2Fios-9.1%2Fslightly-frowning-face%2F&psig=AOvVaw2KXtMbpoO0jHC-iSsud60T&ust=1618535673192000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNj-wOSJ_-8CFQAAAAAdAAAAABAD"
+      : "https://www.emoji.co.uk/files/apple-emojis/smileys-people-ios/44-white-frowning-face.png";
 
   scoreDiv.innerHTML = "<img src=" + img + ">";
   scoreDiv.innerHTML += "<p>" + scoreNumber + "%</p>";
