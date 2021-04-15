@@ -7,9 +7,8 @@ const choiceA = document.getElementById("A");
 const choiceB = document.getElementById("B");
 const choiceC = document.getElementById("C");
 const scoreDiv = document.getElementById("score");
-const pick = document.querySelectorAll("choices");
+const restartBtn = document.getElementById("restart");
 
-console.log(pick);
 // make an array of questions with objects
 const questions = [
   {
@@ -88,6 +87,8 @@ function checkAnswer(event) {
   if (event.target.id == questions[runningQuestion].correct) {
     // if selected the correct answer, add one
     score++;
+  } else if (event.target.id == questions[runningQuestion].length) {
+    restartButton();
   }
   if (runningQuestion < lastQuestion) {
     runningQuestion++;
@@ -160,9 +161,16 @@ function scoreRender() {
       : scoreNumber >= 40
       ? "https://iconarchive.com/download/i43123/oxygen-icons.org/oxygen/Emotes-face-plain.ico"
       : scoreNumber >= 20
-      ? "https://www.google.com/url?sa=i&url=https%3A%2F%2Femojipedia.org%2Fapple%2Fios-9.1%2Fslightly-frowning-face%2F&psig=AOvVaw2KXtMbpoO0jHC-iSsud60T&ust=1618535673192000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNj-wOSJ_-8CFQAAAAAdAAAAABAD"
-      : "https://www.emoji.co.uk/files/apple-emojis/smileys-people-ios/44-white-frowning-face.png";
+      ? "https://images.fineartamerica.com/images-medium-large-5/sad-monkey-lori-silcox.jpg"
+      : "https://images.fineartamerica.com/images-medium-large-5/sad-monkey-lori-silcox.jpg";
 
-  scoreDiv.innerHTML = "<img src=" + img + ">";
+  scoreDiv.innerHTML = "<img src=" + img + " width= '265px';>";
   scoreDiv.innerHTML += "<p>" + scoreNumber + "%</p>";
 }
+
+// restartBtn.addEventListener("click", restartButton);
+
+// function restartButton() {
+//   //display the button
+//   restartBtn.style.display = "block";
+// }
