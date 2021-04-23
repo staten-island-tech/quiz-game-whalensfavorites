@@ -1,56 +1,14 @@
-// define your variables
-correct = 0;
-const start = document.getElementById("start");
-const quiz = document.getElementById("quiz");
-const question = document.getElementById("question");
-const choiceA = document.getElementById("A");
-const choiceB = document.getElementById("B");
-const choiceC = document.getElementById("C");
-const scoreDiv = document.getElementById("score");
-const restartBtn = document.getElementById("restart");
-
-// make an array of questions with objects
-const questions = [
-  {
-    question: "What does Mr Whalen own the most of?",
-    choiceA: "Plaid flannels",
-    choiceB: "Sport Jerseys",
-    choiceC: "Crop tops",
-    correct: "A",
-  },
-
-  {
-    question: "What is Mr Whalen's spirit animal?",
-    choiceA: "Chihuahua",
-    choiceB: "Monkey",
-    choiceC: "Lion",
-    correct: "B",
-  },
-
-  {
-    question: "What shoes does he always wear?",
-    choiceA: "Sketchers",
-    choiceB: "Nike",
-    choiceC: "Adidas",
-    correct: "C",
-  },
-
-  {
-    question: "What class is his least favorite class to teach?",
-    choiceA: "CAD",
-    choiceB: "Computer Science",
-    choiceC: "AP World",
-    correct: "A",
-  },
-
-  {
-    question: "What college did he go to?",
-    choiceA: "Harvard",
-    choiceB: "CSI",
-    choiceC: "St. Johns",
-    correct: "C",
-  },
-];
+import { questions } from "./questions";
+import {
+  start,
+  quiz,
+  question,
+  choiceA,
+  choiceB,
+  choiceC,
+  scoreDiv,
+  restartBtn,
+} from "./questions";
 
 // display a question! (or rendering)
 
@@ -163,6 +121,23 @@ function scoreRender() {
       : scoreNumber >= 20
       ? "https://images.fineartamerica.com/images-medium-large-5/sad-monkey-lori-silcox.jpg"
       : "https://images.fineartamerica.com/images-medium-large-5/sad-monkey-lori-silcox.jpg";
+
+  // switch (img) {
+  //   case scoreNumber >= 80:
+  //     "https://3.files.edl.io/aeb1/20/12/02/154937-46cc468f-b7f4-4bb3-945e-3265bdb605d4.jpg";
+  //     break;
+  //   case scoreNumber >= 60:
+  //     "https://cdn.iconscout.com/icon/free/png-256/slightly-smiling-face-1645183-1395513.png";
+  //     break;
+  //   case scoreNumber >= 40:
+  //     "https://iconarchive.com/download/i43123/oxygen-icons.org/oxygen/Emotes-face-plain.ico";
+  //     break;
+  //   case scoreNumber >= 20:
+  //     "https://images.fineartamerica.com/images-medium-large-5/sad-monkey-lori-silcox.jpg";
+  //     break;
+  //   default:
+  //     "https://images.fineartamerica.com/images-medium-large-5/sad-monkey-lori-silcox.jpg";
+  // };
 
   scoreDiv.innerHTML = "<img src=" + img + " width= '265px';>";
   scoreDiv.innerHTML += "<p>" + scoreNumber + "%</p>";
